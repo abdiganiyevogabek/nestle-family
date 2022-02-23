@@ -80,7 +80,7 @@
 .input {
   width: 370px;
   font-size: 15px;
-  padding: 8px 10px;
+  padding: 13px 10px;
   border-style: none;
   border-bottom: 1px solid black;
 }
@@ -118,4 +118,46 @@
 .link-menu:hover,
 .link-bar:hover {
   background-color: rgb(184, 184, 184);
+}
+
+.image {
+  overflow: hidden;
+  display: flex;
+  background-image: url(./nestle-image/image.jpg);
+  height: 440px;
+
+}
+
+.image div {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(180deg,transparent 0,rgba(0, 0, 0, 0.7));
+}
+
+.image div:hover {
+  cursor: pointer;
+}
+
+.image a {
+  color: white;
+  text-decoration: none;
+}
+
+.image-link1 {
+  font-size: 60px;
+  margin-top: 150px;
+}
+
+.image-link2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.image-link3 {
+  font-size: 14px;
+  margin-top: 30px;
 }
