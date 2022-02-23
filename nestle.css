@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header-ctn {
-  border: 1px solid blue;
   height: 150px;
   display: flex;
   justify-content: space-around;
@@ -7,8 +12,7 @@
 
 .header-ctn1,
 .header-ctn2 {
-  border: 1px solid red;
-  width: 420px;
+  width: 380px;
 }
 
 .header-ctn1 {
@@ -18,7 +22,7 @@
 }
 
 .n-image {
-  width: 370px;
+  width: 360px;
 }
 
 .header-ctn2 {
@@ -29,30 +33,42 @@
 
 .header-ctn2-div1,
 .header-ctn2-div2 {
-  border: 1px solid green;
   height: 50px;
 }
 
 .header-ctn2-div1 {
   padding-top: 11px;
+  display: flex;
+  list-style: none;
 }
 
 .link {
   text-decoration: none;
   font-size: 16px;
-  border-radius: 5px;
 }
 
 .link1 {
   background-color: #F6F5F4;
-  padding: 9px 50px;
+  padding: 10px 50px;
   color: black;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.link1:hover {
+  background-color: rgb(233, 233, 233);
 }
 
 .link2 {
-  padding: 9px 20px;
+  padding: 10px 20px;
   background-color: #007CBA;
   color: white;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.link2:hover {
+  background-color: #006da3;
 }
 
 .header-ctn2-div2 {
@@ -62,7 +78,7 @@
 }
 
 .input {
-  width: 395px;
+  width: 370px;
   font-size: 15px;
   padding: 8px 10px;
   border-style: none;
@@ -71,4 +87,35 @@
 
 ::placeholder {
   color: black;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  background-color: #F6F5F4;
+  padding: 12px;
+}
+
+.menu-bar1,
+.menu-bar2 {
+  display: flex;
+  list-style: none;
+}
+
+.link-menu,
+.link-bar {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  padding: 12px 10px;
+}
+
+.link-bar {
+  font-weight: 600;
+}
+
+.link-menu:hover,
+.link-bar:hover {
+  background-color: rgb(184, 184, 184);
 }
