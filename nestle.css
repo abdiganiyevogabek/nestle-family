@@ -372,8 +372,7 @@
 }
 
 .explore {
-  border: 1px solid red;
-  height: 50vh;
+  height: 320px;
   width: 80%;
   margin: 100px auto;
   display: flex;
@@ -381,9 +380,78 @@
   justify-content: space-between;
 }
 
-.explore-divs {
-  border: 1px solid darkorange;
-  height: 33%;
+.icon-div {
+  height: 33.333%;
+}
+
+.big-parag {
+  font-size: 38px;
+  text-align: center;
+  color: #63513D;
+  margin-bottom: 50px;
+}
+
+.big-parag big {
+  color: #63513D;
+  font-weight: 600;
+}
+
+.explore-divs2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-image {
+  width: 104px;
+  box-shadow: 3px 2px  7px rgb(126, 124, 124);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left {
+  width: 50px;
+  margin-top: 25px;
+}
+
+.explore-divs3 {
+  display: flex;
+  justify-content: center;
+}
+
+.ul {
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 29px;
+  margin-top: 18px;
+}
+
+.ul li {
+  margin-left: 15px;
+  list-style:disc;
+  color: rgb(121, 121, 121);
+  cursor: pointer;
+}
+
+.explore-divs4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button {
+  font-size: 14px;
+  color: #007CBA;
+  padding: 8px 17px;
+  background-color: white;
+  border: 1px solid  #007CBA;
+  box-shadow: 0 1px 1px 0 grey;
+  margin-top: 50px;
+}
+
+.icon-button:hover {
+  cursor: pointer;
+  background-color:#CCE5F1;
 }
 
 .sign-up-ctn {
