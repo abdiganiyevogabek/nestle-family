@@ -127,11 +127,10 @@
 }
 
 .image {
-  overflow: hidden;
-  display: flex;
   background-image: url(./nestle-image/image.jpg);
-  height: 440px;
-
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
 }
 
 .image div {  
@@ -201,7 +200,6 @@
 @media  (max-width:767px) {
   .n-image {
     width: 240px;
-    /* position: absolute; */
   }
 
   .header-ctn1 {
@@ -214,47 +212,163 @@
 }
 
 
-@media (min-width: 0) {
+@media (max-width: 100%) {
   .image {
     width: 100%;
+    height: auto;
   }
 }
 
 .read-more-ctn {
-  border: 1px solid darkmagenta;
   height: 450px;
   width: 80%;
   margin: 80px auto;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .read-more-ctn-div {
-  border: 1px solid gold;
-  width: 24%;
-  border-radius: 15px;
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 16%);
+  border-left: 1px solid gainsboro;
+}
+
+#title1 {
+  color: #006da3;
+}
+
+#title2 {
+  color: #D64123;
+  line-height: 30px;
+}
+
+#title3 {
+  color: #2E8025;
+}
+
+#title4 {
+  color: #6F2277;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: auto;
+  height: 33%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: url(./nestle-image/report.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(./nestle-image/comminments.png);
+}
+
+.img3 {
+  background-image: url(./nestle-image/to\ talk.png);
+}
+
+.img4 {
+  background-image: url(./nestle-image/careers.jpg );
+}
+
+.text-div {
+  width: auto;
+  height: 67%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 20px;
+  position: relative;
+}
+
+#title1,
+#title2,
+#title3,
+#title4 {
+  font-size: 25px;
+}
+
+.text-div p {
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+.text-div a {
+  position: absolute;
+  text-decoration: none;
+  color: #006da3;
+  font-size: 15px;
+  bottom: 30px;
+  left: 20px;
 }
 
 .more-news-ctn {
   background-color: #A50064;
-  height: 55vh;
+  height: 42vh;
   display: flex;
   justify-items: center;
   align-items: center;
 }
 
 .ctn-in {
-  border: 1px solid goldenrod;
-  width: 80%;
+  width: 79%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  height: 220px;
+  height: 180px;
 }
 
 .more-news-ctn-div {
-  border: 1px solid blue;
   width: 22%;
+  padding: 20px;
+}
+
+.paragraph {
+  font-size: 40px;
+  color: white;
+  margin-top: 10px;
+}
+
+.link-button {
+  padding: 9px 20px;
+  font-size: 14px;
+  background-color: #A50064;
+  border: 1px solid white;
+  color: white;
+  margin-top: 60px;
+  border-radius: 2px;
+}
+
+.link-button:hover {
+  cursor: pointer;
+  background-color: #8d0055;
+}
+
+.parag-data {
+  font-size: 15px;
+  color: white;
+  margin: 15px 0;
+}
+
+.data-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.hr {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  width: 22%;
+  padding: 20px 50px 20px 0;
 }
 
 .explore {
