@@ -455,24 +455,79 @@
 }
 
 .sign-up-ctn {
-  background-color: #006da3;
+  background-color: #007CBA;
   display: flex;
   justify-items: center;
   align-items: center;
-  height: 300px;
+  height: 280px;
 }
 
 .sign-up {
   width: 80%;
   margin: 50px auto;
-  height: 200px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
 }
 
 .sign-up-divs {
-  border: 1px solid red;
   width: 23%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-link1,
+.news-link2 {
+  color: white;
+  text-decoration: none;
+}
+
+.news-link1 {
+  font-size: 24px;
+
+}
+
+.news-link2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.news-button-link,
+.news-button-link2 {
+  padding: 9px 20px;
+  width: fit-content;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  margin-top: 18px;
+  background-color: white;
+  text-decoration: none;
+  color: #007CBA;
+  box-shadow: 0 2px 1px 0 rgb(90, 90, 90);
+}
+
+.news-button-link2 {
+  background-color:#007CBA;
+  border: 1px solid white;
+  color: white;
+}
+
+.news-button-link2:hover {
+  background-color: #00679b;
+}
+
+.news-button-link:hover {
+  background-color: #c3dce9;
+}
+
+.world-map {
+  width: 240px;
+  opacity: 0.4;
+}
+
+.world-map:hover {
+  opacity: 1;
 }
 
 .follow-ctn {
