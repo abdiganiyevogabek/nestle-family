@@ -691,3 +691,39 @@
 .end-div {
   border: none;
 }
+
+.div-sticy1 {
+	display: flex;
+	position: sticky;
+	position: -webkit-sticky;
+  bottom: 0;
+  float: right;
+}
+
+.div-sticy1 a {
+  padding: 11px 10px;
+  background-color: #dad8d8;
+  text-decoration: none;
+  color:#5A524B;
+}
+
+.ctn {
+  position: relative;
+}
+
+/* .div-sticy2 {
+  transform: rotate(270deg);
+  border: 2px solid red;	display: flex;
+	position: sticky;
+	position: -webkit-sticky;
+  bottom: 100px;
+  float: right;
+}
+
+.div-sticy2 a {
+  padding: 8px 25px;
+  background-color:#0380be;
+  text-decoration: none;
+  color:white;
+  border-radius: 5px;
+} */
