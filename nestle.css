@@ -174,10 +174,14 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 1024px) {
-  .menu-bar {
-    display: none;
-  }
+@media (max-width: 1023px) {
+   .menu-bar {
+     display: none;
+   }
+
+   .input {
+     display: none;
+   }
 
   .header-ctn {
     margin-bottom: 25px;
@@ -188,22 +192,18 @@
     font-size: 30px;
   }
 
-  .input {
-    display: none;
-  }
-
   .n-image {
     margin-left: 15px;
   }
 }
 
-@media  (max-width:767px) {
+@media  (max-width:768px) {
   .n-image {
-    width: 240px;
+    width: 100%;
   }
 
   .header-ctn1 {
-    width: fit-content;
+    width: fit-content ;
   }
 
   .header-ctn2-div1 {
@@ -211,11 +211,19 @@
   }
 }
 
-
-@media (max-width: 100%) {
+@media (max-width: 1023px) {
   .image {
     width: 100%;
-    height: auto;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .image div {
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -237,20 +245,25 @@
   border-left: 1px solid gainsboro;
 }
 
+
 #title1 {
   color: #006da3;
+  font-size: 25px;
 }
 
 #title2 {
   color: #D64123;
   line-height: 30px;
+  font-size: 25px;
 }
 
 #title3 {
+  font-size: 25px;
   color: #2E8025;
 }
 
 #title4 {
+  font-size: 25px;
   color: #6F2277;
 }
 
@@ -286,6 +299,73 @@
   border-bottom-right-radius: 6px;
   padding: 20px;
   position: relative;
+}
+
+
+@media (max-width:1024px) {
+  
+  .read-more-ctn {
+    height: 600px;
+  }
+  
+  .read-more-ctn-div {
+    width: 190px;
+  }
+  
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 18%;
+  }
+}
+
+@media (max-width: 768px) {
+  .read-more-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    height: 192vh;
+  }
+
+  .read-more-ctn-div {
+    width: 48.5%;
+    height: 445px;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 220px;
+  }
+
+  .text-div {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .read-more-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    height: 192vh;
+  }
+
+  .read-more-ctn-div {
+    width: 48.5%;
+    height: 445px;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 220px;
+  }
+
+  .text-div {
+    height: 300px;
+  }
 }
 
 #title1,
@@ -371,6 +451,32 @@
   padding: 20px 50px 20px 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .more-news-ctn {
+    height: 63vh;
+  }
+
+  .paragraph {
+    margin-top: 0;
+    line-height: 40px;
+  }
+
+  .hr {
+    padding: 0 30px 0 0;
+    width: 20%;
+  }
+
+
+  .ctn-in {
+    height: 210px;
+    height: 60%;
+  }
+
+  .link-button {
+    margin-top: 40px;
+  }
+}
+
 .explore {
   height: 320px;
   width: 80%;
@@ -454,6 +560,35 @@
   background-color:#CCE5F1;
 }
 
+@media only screen and (max-width: 1024px) {
+  
+  .explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 275px;
+  }
+
+  .icons-image {
+    width: 170px;
+  } 
+  
+  .big-parag {
+    font-size: 25px;
+  }
+  
+  .explore-divs2 {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+  }
+  
+  .none {
+    display: none;
+  }
+}
+
 .sign-up-ctn {
   background-color: #007CBA;
   display: flex;
@@ -528,6 +663,16 @@
 
 .world-map:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .world-map {
+    width: 190px;
+  }
+
+  .sign-up-ctn {
+    height: 310px;
+  }
 }
 
 .follow-ctn {
@@ -668,6 +813,12 @@
   background-color: #00a2f3;
 }
 
+@media only screen and (max-width: 1024px) {
+  .follow-ctn {
+    height: 160vh;
+  }
+}
+
 .footer {
   display: flex;
   width: 80%;
@@ -675,7 +826,6 @@
 }
 
 .footer {
-  margin-bottom: 35px;
   margin-top: 15px;
 }
 
@@ -690,6 +840,22 @@
 
 .end-div {
   border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-top: 0;
+    padding: 0 90px 0 0;
+  }
+  
+  .footer-div {
+    height: 14px;
+    margin-top: 5px;
+    font-size: 15px;
+  }
 }
 
 .div-sticy1 {
@@ -727,3 +893,4 @@
   color:white;
   border-radius: 5px;
 } */
+/*  */
